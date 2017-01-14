@@ -45,18 +45,18 @@
 \DeclareOption{boxed}{%
     \hmcpset@boxedtrue%
 }
-   
+
 % don't box problem statements
 \DeclareOption{unboxed}{%
     \hmcpset@boxedfalse%
 }
-   
+
 % pass remaining options to article class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 
 %%% EXECUTION OF OPTIONS --------------------------------------------------
 %% default to:
-% including header, 
+% including header,
 % loading mathpazo package for palatino fonts,
 % boxing problem statements
 \ExecuteOptions{header,palatino,boxed}
